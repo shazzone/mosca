@@ -2,4 +2,5 @@ applications:
 - name: mosca-ank
 memory: 256M
 host: mosca-ank
-command: mosca -v | bunyan
+command: mosca -v --http-port 80 --http-bundle --http-static ./ | bunyan
+path: .
