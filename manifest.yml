@@ -1,0 +1,5 @@
+applications:
+- name: mosca-ank
+memory: 256M
+host: mosca-ank
+command: mosca -v | bunyan
