@@ -8,7 +8,7 @@ var http     = require('http')
 
 mqttServ.attachHttpServer(httpServ);
 
-httpServer.listen(port, host);
+httpServ.listen(port, host);
  
 ////here we start mosca
 //var server = new mosca.Server(settings);

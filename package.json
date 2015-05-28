@@ -13,7 +13,7 @@
     "publish-coverage": "(cat coverage/lcov.info | coveralls)",
     "jshint-lib": "jshint lib",
     "jshint-test": "jshint test",
-    "start": "./bin/mosca -v | bunyan",
+    "start": "node server.js",
     "bundle": "browserify -r mqtt -s mqtt | uglifyjs --screw-ie8 > public/mqtt.js",
     "postinstall": "npm run bundle"
   },
@@ -24,7 +24,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/mcollina/mosca.git"
+    "url": "https://github.com/shazzone/mosca.git"
   },
   "bugs": {
     "url": "http://github.com/mcollina/mosca/issues"
